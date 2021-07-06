@@ -1,0 +1,60 @@
+html{
+
+    background-image:url(https://unsplash.it/1500/1000?image=881&blur=5);
+    background-repeat: no-repeat;
+    background-size:100vw 100vh;
+    opacity:0.7;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100vh;
+}
+.clock{
+    background-image: url(/Images/download.png);
+    opacity:0.7;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    align-items: center;
+    padding:0px;
+    width: 495px;
+    height: 500px;
+    border-radius: 80%;
+    border: 5px solid rgb(0, 0, 0);
+    position: relative;
+}
+.hands{
+    background-color: rgb(245, 10, 10);
+    opacity:1115;
+    margin:5px;
+    width: 50%;
+    height: 0px;
+    position: absolute;
+    transform:rotate(90deg);
+    transform-origin: 95%;
+    transition: all 0.5;
+    transition-timing-function: ease-in-out;
+    border-top-left-radius:100%;
+    border: 2px solid rgb(255, 0, 0);
+}
+.minutes{
+    background-color: rgb(19, 38, 207);
+    width: 45%;
+    height: 2px;
+    margin:28px;
+    border: 2px solid rgb(19, 38, 207);
+}
+.hours{
+    background-color: rgb(0, 0, 0);
+    width:30%;
+    height: 4px;
+    margin:98px;
+    border: 2px solid rgb(0, 0, 0);
+}

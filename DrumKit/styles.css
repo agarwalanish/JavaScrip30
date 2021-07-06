@@ -1,0 +1,82 @@
+html{
+    background-image: url("images/main.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 0.5;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/* .background{
+    display: flex;
+    width:100vw;
+    height: 100vh;
+    background-image: url("images/main.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment:scroll;
+    opacity:0.5;
+} */
+
+.container{
+    display:flex;
+    flex: 1;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    font-weight: 1000;
+    font-size: x-large;
+}
+.key{
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+    border:2px solid black;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 25px;
+    width:  25px;
+    height: 25px;
+    transition: all 0.07s;
+    text-shadow: 0 0 5px black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: yellow;
+    box-shadow: 0 0 10px yellow;
+}
+.bg1{
+    background-image: url("images/img1.jpg");
+  }
+  .bg2{
+    background-image: url("images/img2.jpg");
+  }
+  .bg3{
+    background-image: url("images/img3.jpg");
+  }
+  .bg4{
+    background-image: url("images/img4.jpg");
+  }
+  .bg5{
+    background-image: url("images/img10.jpg");
+  }
+  .bg6{
+    background-image: url("images/img6.jpg");
+  }
+  .bg7{
+    background-image: url("images/img7.jpg");
+  }
+  .bg8{
+    background-image: url("images/img8.jpg");
+  }
+  .bg9{
+    background-image: url("images/img9.jpg");
+  }
+/* @media only screen and(max-height : 500px) {
+.background{
+    background-size: 100vw 100vh;
+}   
+} */

@@ -1,0 +1,41 @@
+:root{
+    --background-color:#131098;
+    --spacing:0px;
+    --blur:0px;
+}
+
+*{
+    
+    background-color: rgb(44, 44, 44);
+    margin: 0;padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 50vw;
+    height: 30vw;
+   filter: blur(var(--blur));
+}
+.container2{
+    background: var(--background-color);
+    padding:var(--spacing);
+    margin-left:25vw;
+    margin-top:5vh;
+    width: 50vw;
+    height: 30vw;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.JS{
+    color: var(--background-color);
+}
