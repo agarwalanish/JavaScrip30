@@ -1,10 +1,17 @@
-document.addEventListener('change', ()=>{
-    let blur=document.querySelector(`.container1 input[name="Blur"]`);
-    let spacing=document.querySelector(`.container1 input[name="Spacing"]`);
-    let color=document.querySelector(`.container1 input[name="Color"]`);
-    const suffix =blur.dataset.sizing || '';
-    console.log(blur.dataset.sizing);
-   document.documentElement.style.setProperty(`--blur`, blur.value + suffix);
-   document.documentElement.style.setProperty(`--spacing`, spacing.value + suffix);
-   document.documentElement.style.setProperty(`--color`, color.value + suffix);
-});
+const inputs=document.querySelectorAll('.container1 h1 input');
+console.log(inputs);
+inputs.forEach(input=>input.addEventListener('change', ()=>{
+    console.log(input);
+    console.log(`--${input.id}`,input.value,input.dataset.sizing);
+    document.documentElement.style.setProperty(`--${input.id}`, input.value + input.dataset.sizing);
+}));
+// const inputs = document.querySelectorAll('.controls input');
+
+// function handleUpdate() {
+//   const suffix = this.dataset.sizing || '';
+//   console.log(`--${this.id}`,this.value,t.dataset.sizing);
+//   document.documentElement.style.setProperty(`--${this.id}`, this.value + suffix);
+// }
+
+// inputs.forEach(input => input.addEventListener('change', handleUpdate));
+// inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
