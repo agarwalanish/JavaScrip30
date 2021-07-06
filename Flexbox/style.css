@@ -19,6 +19,7 @@ body{
     justify-content: center;
     align-items: center;
     transition: all 0.7s;
+    color: white;
 }
 .panel>*{
     transition: transform 0.5s;
