@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("images/radowan-nakif-rehan-qgXz4qXViCg-unsplash.jpg");
+    color: white;
+    width: 75vw;
+    height: 90vh;
+    overflow:auto;
+    font-family: 'Texturina', serif;
+    background-size: cover;
+    opacity: 0.7;
+    display: flex;
+    flex-direction: column;
+}
+h1{
+    margin:0px 0 10px 25vw;
+    background-color: black;
+    color:white;
+    opacity: 100;
+    font-weight: 1000;
+    width: 350px;
+}
+h2{
+    margin: 0px 0 10px 10px;
+    opacity: 100;
+}
+input[type=text]{
+    width:70vw;
+    height: 5vh;
+    margin:10px;
+    opacity: 5;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#Description{
+    height: 10vh;
+    opacity: 5;
+}
+#submit
+{
+    width: 25vw;
+    height: 5vh;
+    margin:20px 0 20px 50px;
+    background-color: blue;
+    color: white;
+    font-size: x-large;
+    opacity: 5;
+}
+#submit:hover{
+    background-color: grey;
+    opacity: 2;
+    cursor: pointer;
+}
+#para{
+    background-color:rosybrown;
+    color: black;
+    font-size: medium;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100vw;
+    height: auto;
+}
+#para>*{
+    margin:10px;
+    border: 5px solid black;
+    border-radius: 5px;
+}
